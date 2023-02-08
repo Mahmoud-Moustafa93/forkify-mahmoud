@@ -139,5 +139,6 @@ function init() {
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
   newFeature();
+  console.log("Welcome origin2");
 }
 init();
