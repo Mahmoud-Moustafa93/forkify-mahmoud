@@ -8,7 +8,6 @@ import bookmarksView from "./views/bookmarksView.js";
 import addRecipeView from "./views/addRecipeView.js";
 
 import "core-js/stable";
-import "regenerator-runtime/runtime";
 
 async function controlRecipes() {
   try {
@@ -121,10 +120,6 @@ async function controlAddRecipe(newRecipe) {
   }
 }
 
-function newFeature() {
-  console.log("Welcome to the application");
-}
-
 function init() {
   bookmarksView.addHandlerRender(controlBookmarks);
   recipeView.addHandlerRender(controlRecipes);
@@ -133,6 +128,5 @@ function init() {
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-  newFeature();
 }
 init();
